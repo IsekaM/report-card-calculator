@@ -1,0 +1,199 @@
+<!--
+
+	Ajani Pinnock :)
+	ID# !701587
+	monday 1-3pm
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Report Card</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+        
+<body>
+  <div class="header">
+    <h1>Report Card</h1>
+    <h2>CP Ellingham High School</h2>
+    <p>
+      760 Cooper Street, <br>
+      Agawan, MA 00101 <br>
+      Phone: (555) 999-0001, Email: info@cpe.edu.ag
+    </p>
+  </div>
+      
+  <div>
+    <form action="" method="post" class="form">
+      <div class="formsection-1">
+        <div class="form-container">
+          <label >Date</label>
+          <input type="date">
+        </div>
+        <div class="form-container">
+          <label >Parent Name</label>
+          <input type="text">
+        </div>
+        <div class="form-container">
+          <label >Parent's Email</label>
+          <input type="email">
+        </div>
+        <div class="form-container">
+          <label >Grade/Room</label>
+          <input type="text">
+        </div>
+        <div class="form-container">
+          <label >School Days</label>
+          <input type="number">
+        </div>
+        <div class="form-container">
+          <label >Days Absent</label>
+          <input type="number">
+        </div>
+      </div>
+
+      <div class="formsection-2">
+        <div class="form-container">
+          <label >Student's Name</label>
+          <input type="text" id="student-name">
+        </div>
+        <div class="form-container">
+          <label >ID#</label>
+          <input type="number" id="student-id">
+        </div>
+        <div class="form-container">
+          <label >Parent's Tele #</label>
+          <input type="tel">
+        </div>
+        <div class="form-container">
+          <label >Semester/year</label>
+          <input type="month">
+        </div>
+        <div class="form-container">
+          <label >Days Present</label>
+          <input type="text">
+        </div>
+        <div class="form-container">
+          <label >Advisor</label>
+          <select name="advisor" id="">
+            <option value="jane doe">Ms. Jane Doe</option>
+            <option value="ian write">Mr. Ian Write</option>
+            <option value="allice inn">Ms. Allice Inn</option>
+            <option value="ian write">Mr. Mike Jones</option>
+            <option value="allice inn">Mr. Shane Pusey</option>
+          </select>
+        </div>
+      </div>
+    </form>
+  </div> 
+  
+  <form id="report-form">
+    <table style="width:100%" class="grade-table"> 
+      <tr>
+          <th>Subect</th>
+          <th>Test 1 %</th>
+          <th>Test 2% </th>
+          <th>Finals</th>
+          <th>Letter Grade</th>    
+      </tr>
+      <tr id="math"> 
+          <td>Math</td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <div class="result"></div> </td>
+      </tr>
+      
+      <tr id="english"> 
+          <td>English</td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <div class="result"></div> </td>
+      </tr>
+      
+      <tr id="science"> 
+          <td>Science</td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <div class="result"></div> </td>
+      </tr>
+
+      <tr id="history"> 
+          <td>History</td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <div class="result"></div> </td>
+      </tr>
+
+      <tr id="econ"> 
+          <td>Economics</td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <div class="result"></div> </td>
+      </tr>
+
+      <tr id="lit"> 
+          <td>Literture</td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <div class="result"></div> </td>
+      </tr>
+
+      <tr id="music"> 
+          <td>Music</td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <div class="result"></div> </td>
+      </tr>
+
+      <tr id="pe"> 
+          <td>PE</td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <input type="number" min="0" max="100" > </td>
+          <td> <div class="result"></div> </td>
+      </tr>
+    </table>
+
+    <button type="reset" id="reset-button">Cancel</button>
+    <button type="button" id="submit-button">Save</button>
+    <a href="mailto:"><button type="button">Email</button></a>
+    <a href="/"><button type="button">Exit</button></a>
+
+  </form>
+
+  <div class="info">
+    <div class="note">
+      <h2>Notes</h2>
+      <p>Student can be enrolled in extra lessons for the classes in which they receieved a letter grade below B</p>
+    </div>
+    
+    <table class="grading-scale">
+      <th>
+      <td>GRADING SCALE</td>
+      </th>
+      <tr>
+        <td>A = 90%-100%</td>
+        <td>B+ = 80% - 89%</td>
+        <td>B = 70% - 79%</td>
+      </tr>
+      <tr>
+        <td>C+ = 60% - 69%</td>
+        <td>C = 50% - 59%</td>
+        <td>D = 0% - 49%</td>
+      </tr>
+    
+    </table>
+  </div>
+        
+  
+  
+  <script src="script/script.js"></script>
+	</body>
+	</head>
+</html>
